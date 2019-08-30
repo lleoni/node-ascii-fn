@@ -7,6 +7,10 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+  "type": "git",
+  "url": "git@github.com:lleoni/node-ascii-fn.git"
+  },
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",

@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 // Function to handle the root path
 app.get('/', async function(req, res) {
 
-    let imageUrl = req.query.imageUrl;
+    let imageUrl = req.query.imageUrl
      
     if (!imageUrl) {
     	res.charset = 'utf8';
@@ -24,6 +24,7 @@ app.get('/', async function(req, res) {
     imageToAscii(imageUrl, {
 		size: { width: 800 }, colored: true
 	}, (err, converted) => {
+	console.log(err || converted)
 	res.send(err || converted )
     })
 });
