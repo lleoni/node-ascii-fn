@@ -5,8 +5,8 @@ metadata:
   namespace: default
 spec:
   template:
-    metadata:
-      annotations:
+#    metadata:
+#      annotations:
 #        autoscaling.knative.dev/window: 600s 
     spec:
       containers:
